@@ -41,10 +41,10 @@ export default function Page() {
                     </div>
                 </section>
                 <section className="pt-12">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" >
                         <li>
                             <Link href="/">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="text-lg font-bold">Sunucu Durumu Denetleyicisi</p>
                                     <p className="mt-1">Herhangi bir Java veya Bedrock Edition Minecraft sunucusunun durumunu kolayca kontrol edin.</p>
                                 </div>
@@ -52,7 +52,7 @@ export default function Page() {
                         </li>
                         <li>
                             <Link href="/tools/motd">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="text-lg font-bold">MOTD Düzenleyici</p>
                                     <p className="mt-1">Bir MOTD'yi kendi sunucunuzda kullanmadan önce kolayca düzenleyin ve önizleyin.</p>
                                 </div>
@@ -60,7 +60,7 @@ export default function Page() {
                         </li>
                         <li>
                             <Link href="/tools/vote">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="text-lg font-bold">Votifier Testi</p>
                                     <p className="mt-1">Gerçek bir oy göndererek Oylayıcınızın düzgün şekilde ayarlanıp ayarlanmadığını hızlı bir şekilde test edin.</p>
                                 </div>
@@ -68,7 +68,7 @@ export default function Page() {
                         </li>
                         <li>
                             <a href="https://mctools.org/whitelist-creator?utm_source=mcstatus.io" rel="sponsored">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="flex items-center gap-3 text-lg font-bold">
                                         <span>Whitelist Oluşturucu</span>
                                         <ExternalLinkIcon width="16" height="16" className="text-neutral-500" />
@@ -79,7 +79,7 @@ export default function Page() {
                         </li>
                         <li>
                             <a href="https://mctools.org/server-properties-creator?utm_source=mcstatus.io" rel="sponsored">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="flex items-center gap-3 text-lg font-bold">
                                         <span>Sunucu Özellikleri Düzenleyicisi</span>
                                         <ExternalLinkIcon width="16" height="16" className="text-neutral-500" />
@@ -90,7 +90,7 @@ export default function Page() {
                         </li>
                         <li>
                             <a href="https://www.planetminecraft.com/banner?utm_source=mcstatus.io" rel="sponsored">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="flex items-center gap-3 text-lg font-bold">
                                         <span>Banner Düzenleyici</span>
                                         <ExternalLinkIcon width="16" height="16" className="text-neutral-500" />
@@ -101,7 +101,7 @@ export default function Page() {
                         </li>
                         <li>
                             <a href="https://minecraft-ids.grahamedgecombe.com?utm_source=mcstatus.io" rel="sponsored">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="flex items-center gap-3 text-lg font-bold">
                                         <span>Blok &amp; İtem</span>
                                         <ExternalLinkIcon width="16" height="16" className="text-neutral-500" />
@@ -112,7 +112,7 @@ export default function Page() {
                         </li>
                         <li>
                             <a href="https://haselkern.com/Minecraft-ArmorStand" rel="sponsored">
-                                <div className="card card-hover h-full">
+                                <div className="card card-hover h-full" style={{ background: "#1d2333" }}>
                                     <p className="flex items-center gap-3 text-lg font-bold">
                                         <span>Zırh Standı Yaratıcısı</span>
                                         <ExternalLinkIcon width="16" height="16" className="text-neutral-500" />

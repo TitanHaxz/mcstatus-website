@@ -564,7 +564,7 @@ export default function Page() {
                         </div>
                     </section>
                 </section>
-                <section className="pt-12">
+                <section className="pt-12" >
                     <AnchorHeader size={2} id="libraries">Libraries</AnchorHeader>
                     <p className="mt-3 leading-7 text-neutral-700 dark:text-neutral-300">We try and provide official support for integrating our service into many languages. The list of official and unofficial libraries are below.</p>
                     <ul className="list-none flex flex-col gap-3 mt-3">

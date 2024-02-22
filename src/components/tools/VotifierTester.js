@@ -102,14 +102,14 @@ export default function VotifierTester({ className = '' }) {
     });
 
     return (
-        <div className={`card ${className}`}>
+        <div className={`card ${className}`}  style={{ background: "#1d2333" }}>
             <form onSubmit={form.handleSubmit}>
                 <div className="flex flex-col lg:flex-row gap-5">
                     <div className="basis-1/4">
                         <label className="label" htmlFor="version">Version</label>
                         <select className="select block" id="version" defaultValue={form.values.version} onChange={form.handleChange} onBlur={form.handleBlur} disabled={form.isSubmitting}>
-                            <option value="1">Votifier 1</option>
-                            <option value="2">Votifier 2</option>
+                            <option value="1" style={{ background: "#1d2333" }}>Votifier 1</option>
+                            <option value="2" style={{ background: "#1d2333" }}>Votifier 2</option>
                         </select>
                         {
                             form.errors.version

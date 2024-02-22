@@ -94,7 +94,7 @@ export const metadata = {
 export const viewport = {
     themeColor: [
         { media: '(prefers-color-scheme: light)', color: '#E6E6E6' },
-        { media: '(prefers-color-scheme: dark)', color: '#111111' }
+        { media: '(prefers-color-scheme: dark)', color: '#1d2333' }
     ]
 };
 
@@ -103,7 +103,7 @@ export default function RootLayout({ children }) {
         <html lang="en" className={`dark ${interFont.variable} ${firaMonoFont.variable}`}>
             <body className="bg-white dark:bg-neutral-900 dark:text-white overflow-x-hidden w-[100vw] scroll-smooth">
                 <div className="flex flex-col min-h-[100lvh]">
-                    <div className="grow">
+                <div className="grow" style={{ background: "#22293c" }}>
                         <noscript>
                             <div className="container container-no-margin my-12">
                                 <alert className="card text-red-500 dark:text-red-400">

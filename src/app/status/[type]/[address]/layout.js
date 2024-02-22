@@ -15,8 +15,8 @@ export default function RootLayout({ children, params: { type, address } }) {
                 <section>
                     <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5">
                         <hgroup>
-                            <h1 className="title">Minecraft Server Status</h1>
-                            <p className="subtitle">Quickly retrieve the status of any Minecraft server</p>
+                            <h1 className="title">Minecraft Sunucu Durumu</h1>
+                            <p className="subtitle">Herhangi bir Minecraft sunucusunun durumunu hızlı bir şekilde alın</p>
                         </hgroup>
                         <CarbonAd />
                     </div>

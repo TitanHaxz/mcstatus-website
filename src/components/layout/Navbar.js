@@ -28,7 +28,7 @@ export default function Navbar({ active }) {
                 <header className={`${showMenu ? 'hidden' : 'md:max-lg:hidden'} md:pr-6 md:border-r-2 md:border-r-[rgba(0,0,0,0.1)] md:dark:border-r-neutral-700 mr-6`}>
                     <Link href="/" className="flex items-center content-center p-1">
                         <Image src={icon} alt="mcstatus.io Icon" width="32" height="32" priority />
-                        <span className="text-xl font-extrabold ml-2 tracking-tighter">MCS</span>
+                        <span className="text-xl font-extrabold ml-2 tracking-tighter">MCF</span>
                     </Link>
                 </header>
                 <button className="absolute top-4 right-4 z-50 text-black dark:text-white ml-auto md:hidden p-2" type="button" onClick={() => setShowMenu(!showMenu)}>
@@ -43,7 +43,7 @@ export default function Navbar({ active }) {
                     <li>
                         <Link href="/">
                             <div className={`p-1 ${showMenu && active === 'home' ? 'text-white' : active === 'home' ? 'text-black dark:text-white' : showMenu ? 'text-neutral-400' : 'hover:text-black hover:dark:text-white'}`}>
-                                <span>Home</span>
+                                <span>Anasayfa</span>
                             </div>
                         </Link>
                     </li>
@@ -62,41 +62,7 @@ export default function Navbar({ active }) {
                             </div>
                         </Link>
                     </li>
-                    <li className="md:mr-auto">
-                        <Link href="/about">
-                            <div className={`p-1 ${showMenu && active === 'about' ? 'text-white' : active === 'about' ? 'text-black dark:text-white' : showMenu ? 'text-neutral-400' : 'hover:text-black hover:dark:text-white'}`}>
-                                <span>About</span>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/QwvzbA9KGz" className={`flex gap-3 items-center rounded-full ${showMenu ? 'text-white' : 'text-black dark:text-white hover:bg-neutral-300 dark:hover:bg-neutral-800'} p-2`}>
-                            <DiscordIcon width="22" height="22" title="Discord" />
-                            <span className="md:sr-only font-bold">Discord</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mcstatus-io" className={`flex gap-3 items-center rounded-full ${showMenu ? 'text-white' : 'text-black dark:text-white hover:bg-neutral-300 dark:hover:bg-neutral-800'} p-2`}>
-                            <GithubIcon width="22" height="22" title="GitHub" />
-                            <span className="md:sr-only font-bold">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://status.mcstatus.io" rel="nofollow" className={`flex gap-3 items-center rounded-full ${showMenu ? 'text-white' : 'text-black dark:text-white hover:bg-neutral-300 dark:hover:bg-neutral-800'} p-2`}>
-                            <ClockIcon width="22" height="22" title="Status" />
-                            <span className="md:sr-only font-bold">Status Page</span>
-                        </a>
-                    </li>
-                    {
-                        process.env.NEXT_PUBLIC_DASHBOARD
-                            ? <li>
-                                <a href={process.env.NEXT_PUBLIC_DASHBOARD} className="button button-green flex items-center gap-2 px-5 py-3 rounded-full text-black dark:text-white">
-                                    <span>Dashboard</span>
-                                    <ArrowRightIcon width="18" height="18" />
-                                </a>
-                            </li>
-                            : null
-                    }
+                    <li className="md:mr-auto"></li>
                 </ul>
             </div>
         </nav>

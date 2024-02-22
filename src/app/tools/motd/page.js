@@ -41,9 +41,9 @@ export default function Page() {
                                     <span className="title h1 link">Tools</span>
                                 </Link>
                                 <ChevronRightIcon width="32" height="32" className="text-neutral-500 hidden md:block" />
-                                <h1 className="title">MOTD Editor</h1>
+                                <h1 className="title">MOTD Editör</h1>
                             </div>
-                            <p className="subtitle h1">Easily edit and preview an MOTD before using it on your own server</p>
+                            <p className="subtitle h1">Bir MOTD'yi kendi sunucunuzda kullanmadan önce kolayca düzenleyin ve önizleyin.</p>
                         </hgroup>
                         <CarbonAd />
                     </div>

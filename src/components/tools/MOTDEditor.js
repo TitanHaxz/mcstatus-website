@@ -179,7 +179,7 @@ export default function MOTDEditor() {
     return (
         <>
             <section className="pt-12">
-                <h2 className="title">Editor</h2>
+                <h2 className="title">Editör</h2>
                 <div className="card mt-3">
                     <div className="flex flex-wrap items-center gap-1">
                         {
@@ -198,18 +198,18 @@ export default function MOTDEditor() {
                             ))
                         }
                     </div>
-                    <textarea className="input resize-none mt-3" rows="2" defaultValue={text} placeholder="Type your MOTD here..." onChange={handleChange} ref={textareaElem} />
+                    <textarea className="input resize-none mt-3" rows="2" defaultValue={text} placeholder="MOTD'nizi buraya yazın" onChange={handleChange} ref={textareaElem} />
                 </div>
             </section>
             <section className="pt-12">
-                <h2 className="title">Preview</h2>
+                <h2 className="title">Ön İzleme</h2>
                 <MinecraftFormatted className="text-lg mt-3">
                     {
                         tree.length > 0
                             ? tree.map((item, index) => (
                                 buildElementFromItem(item, index)
                             ))
-                            : <span className="text-neutral-500">Edit your MOTD above...</span>
+                            : <span className="text-neutral-500">MOTD'nizi yukarıda düzenleyin</span>
                     }
                 </MinecraftFormatted>
             </section>
@@ -244,7 +244,7 @@ export default function MOTDEditor() {
             </section>
             <section className="pt-12">
                 <div className="flex items-center gap-3">
-                    <h2 className="title">Permalink</h2>
+                    <h2 className="title">Kalıcı Bağlantı</h2>
                     <CopyButton className="button-sm font-sans gap-2" iconSize="16" text={`https://mcstatus.io/tools/motd?text=${encodeURIComponent(text)}`} />
                 </div>
                 <div className="card mt-3 overflow-auto">

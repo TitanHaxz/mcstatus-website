@@ -22,13 +22,13 @@ export default function StatusTable({ status, protocolVersions, className = '', 
 
     const rows = [
         [
-            'Status',
+            'Durum',
             status.online
-                ? <span className="badge badge-green text-sm">Online</span>
-                : <span className="badge badge-red text-sm">Offline</span>
+                ? <span className="badge badge-green text-sm">Aktif</span>
+                : <span className="badge badge-red text-sm">Sunucu Kapalı</span>
         ],
         [
-            'Host',
+            'IP',
             <span className="font-mono" key="host">{status.host}</span>
         ],
         [
@@ -67,7 +67,7 @@ export default function StatusTable({ status, protocolVersions, className = '', 
                     : <span className="text-neutral-500 dark:text-neutral-400">N/A (&lt; 1.3)</span>
             ],
             [
-                'Players',
+                'Oyuncular',
                 <>
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3">
                         {
@@ -82,7 +82,7 @@ export default function StatusTable({ status, protocolVersions, className = '', 
                                 ? <>
                                     <div className="flex flex-wrap items-center gap-3">
                                         <button type="button" className="button flex items-center gap-1 w-auto text-sm" onClick={() => setShowPlayers(!showPlayers)} aria-controls="players-list" aria-expanded={showPlayers}>
-                                            <span>{showPlayers ? 'Hide' : 'Show'} player list</span>
+                                            <span>Oyuncu listesini {showPlayers ? 'gizle' : 'göster'} </span>
                                             <Chevron width="16" height="16" isFlipped={showPlayers} />
                                         </button>
                                         {
@@ -95,8 +95,8 @@ export default function StatusTable({ status, protocolVersions, className = '', 
                                                     }
                                                     {
                                                         showAvatars
-                                                            ? <span>List</span>
-                                                            : <span>Avatars</span>
+                                                            ? <span>Liste</span>
+                                                            : <span>Oyuncular</span>
                                                     }
                                                 </button>
                                                 : null
@@ -157,7 +157,7 @@ export default function StatusTable({ status, protocolVersions, className = '', 
 
         if (typeof status.mods !== 'undefined') {
             rows.push([
-                'Mods',
+                'Modlar',
                 <>
                     {
                         status.mods.length > 0
@@ -203,7 +203,7 @@ export default function StatusTable({ status, protocolVersions, className = '', 
 
         if (typeof status.plugins !== 'undefined') {
             rows.push([
-                'Plugins',
+                'Eklentiler',
                 <>
                     {
                         status.plugins.length > 0
@@ -272,13 +272,13 @@ export default function StatusTable({ status, protocolVersions, className = '', 
 
         rows.push(
             [
-                'EULA Blocked',
+                'EULA Bloklu mu?',
                 status.eula_blocked
-                    ? <span className="text-red-600 dark:text-red-400">Yes</span>
-                    : <span>No</span>
+                    ? <span className="text-red-600 dark:text-red-400">Evet</span>
+                    : <span>Hayır</span>
             ],
             [
-                'Protocol Version',
+                'Protokol Sürümü',
                 status.version?.protocol
                     ? <span>
                         <span>{status.version.protocol}</span>
@@ -294,7 +294,7 @@ export default function StatusTable({ status, protocolVersions, className = '', 
 
         if (typeof status.software !== 'undefined') {
             rows.push([
-                'Software',
+                'Yazılım',
                 status.software
                     ? <span>{status.software}</span>
                     : <span className="text-neutral-500 dark:text-neutral-400">N/A</span>
@@ -304,7 +304,7 @@ export default function StatusTable({ status, protocolVersions, className = '', 
 
     if (typeof status.srv_record !== 'undefined') {
         rows.push([
-            'SRV Record',
+            'SRV Kaydı',
             status.srv_record
                 ? <span className="font-mono">{status.srv_record.host}:{status.srv_record.port}</span>
                 : <span className="text-neutral-500 dark:text-neutral-400">N/A</span>
